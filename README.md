@@ -1,22 +1,29 @@
-# vim setup
+# my vim setup
 
-## Setup
+## prereqs
 
-Save old things:
+* neovim
+* [vim-plug](https://github.com/junegunn/vim-plug)
+
+## setup
+
+save old things:
 
 ```
 mv ~/.vim ~/.vim.old
 mv ~/.vimrc ~/.vimrc.old
 ```
 
-Clone 
+clone:
+
 ```
 git clone https://github.com/niartenyaw/vim.git ~/.vim
 ```
 
-Create link vimrc
+create link vimrc:
+
 ```
 ln ~/.vimrc ~/.vim/vimrc
 ```
 
-This started as a copy of [amix/vimrc](https://github.com/amix/vimrc) but has been edited to fit my own preferences.
+this started as a copy of [amix/vimrc](https://github.com/amix/vimrc) but has been customized to fit my own preferences.
