@@ -52,11 +52,6 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-
 " Set relative line number at cursor
 set number
 if exists("&relativenumber")
@@ -75,7 +70,7 @@ nnoremap <C-y> 3<C-y>
 " Do not fold by default
 set nofoldenable
 
-" 0 moves to beginning text not line
+" 0 moves to beginning of text, not start of line
 nnoremap 0 ^
 
 " insert blank lines above and below
@@ -209,12 +204,12 @@ set shiftwidth=4
 set tabstop=4
 
 " Linebreak on 500 characters
-set lbr
-set tw=500
+" set lbr
+" set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+" set wrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
