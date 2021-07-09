@@ -112,7 +112,7 @@ let g:ale_linters = {
     \ 'python': ['flake8'],
     \ 'go': ['go', 'golint', 'errcheck']
     \ }
-let b:ale_linters_ignore = {'python': ['pyright']}
+let g:ale_linters_explicit = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 0

@@ -43,6 +43,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'neoclide/coc-tsserver'
 Plug 'neoclide/coc-eslint'
 Plug 'neoclide/coc-prettier'
+Plug 'pappasam/coc-jedi'
 
 " Python
 Plug 'nvie/vim-flake8'
