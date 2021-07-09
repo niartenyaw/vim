@@ -107,11 +107,11 @@ endfunction
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
-\   'ruby': ['standardrb'],
-\   'javascript': ['prettier'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
+    \ 'ruby': ['standardrb'],
+    \ 'javascript': ['prettier'],
+    \ 'python': ['flake8'],
+    \ 'go': ['go', 'golint', 'errcheck']
+    \ }
 let b:ale_linters_ignore = {'python': ['pyright']}
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
@@ -159,15 +159,20 @@ let g:fzf_tags_command = 'ctags -R'
 " => Coc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:coc_global_extensions = [
-  \ 'coc-tsserver'
-  \ ]
+    \ 'coc-tsserver'
+    \ ]
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-  let g:coc_global_extensions += ['coc-prettier']
+    let g:coc_global_extensions += ['coc-prettier']
 endif
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
+    let g:coc_global_extensions += ['coc-eslint']
 endif
+
+let g:coc_filetype_map = {
+    \ 'tsx': 'typescriptreact',
+    \ }
+
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
