@@ -1,0 +1,17 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "diagnostic.displayByAle": true,
+
+    "pyright.enable": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "pyright.organizeimports.provider": "isort",
+
+    "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "prettier.disableSuccessMessage": true
+}

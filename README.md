@@ -20,10 +20,11 @@ clone:
 git clone https://github.com/niartenyaw/vim.git ~/.vim
 ```
 
-create link vimrc:
+create links:
 
 ```
 ln ~/.vimrc ~/.vim/vimrc
+ln ~/.config/nvim/coc-settings.json ~/.vim/coc-settings.json
 ```
 
 this started as a copy of [amix/vimrc](https://github.com/amix/vimrc) but has been customized to fit my own preferences.
