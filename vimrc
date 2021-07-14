@@ -23,6 +23,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-surround'
 Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'tpope/vim-commentary'
 
 " Misc Support
 Plug 'groenewege/vim-less'

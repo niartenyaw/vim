@@ -10,7 +10,7 @@ au BufNewFile,BufRead *.mako set ft=mako
 au FileType python set shiftwidth=4
 au FileType python set tabstop=4
 au FileType python set softtabstop=4
-au FileType python map <buffer> F :set foldmethod=indent<cr>
+au FileType python set foldlevelstart=2
 
 au FileType python map <buffer> <leader>1 /class 
 au FileType python map <buffer> <leader>2 /def 
@@ -23,6 +23,12 @@ au FileType python map <buffer> <leader>D ?def
 """""""""""""""""""""""""""""""
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+
+au FileType typescript setl fen
+au FileType typescript setl nocindent
+
+au FileType typescriptreact setl fen
+au FileType typescriptreact setl nocindent
 
 " au BufNewFile,BufFilePre,BufRead *.tsx set ft=typescript
 

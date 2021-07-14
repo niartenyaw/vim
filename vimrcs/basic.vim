@@ -67,15 +67,16 @@ hi ColorColumn ctermbg=238
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" Do not fold by default
-set nofoldenable
-
 " 0 moves to beginning of text, not start of line
 nnoremap 0 ^
 
 " insert blank lines above and below
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
+
+" Folding
+set foldmethod=indent
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
