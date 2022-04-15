@@ -1,6 +1,7 @@
 """"""""""""""""""""""""""""""
 " => Python section
 """"""""""""""""""""""""""""""
+let g:python3_host_prog = '/Users/aaron.wayne/.pyenv/versions/aurelia/bin/python'
 let python_highlight_all = 1
 au FileType python syn keyword pythonDecorator True None False self
 
@@ -10,31 +11,21 @@ au BufNewFile,BufRead *.mako set ft=mako
 au FileType python set shiftwidth=4
 au FileType python set tabstop=4
 au FileType python set softtabstop=4
-au FileType python set foldlevelstart=2
-
-au FileType python map <buffer> <leader>1 /class 
-au FileType python map <buffer> <leader>2 /def 
-au FileType python map <buffer> <leader>C ?class 
-au FileType python map <buffer> <leader>D ?def 
 
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript setl fen
-au FileType javascript setl nocindent
-
-au FileType typescript setl fen
-au FileType typescript setl nocindent
-
-au FileType typescriptreact setl fen
-au FileType typescriptreact setl nocindent
-
-" au BufNewFile,BufFilePre,BufRead *.tsx set ft=typescript
+au FileType javascript, typescript, typescriptreact setl fen
+au FileType javascript, typescript, typescriptreact setl nocindent
 
 " Sometimes syntax highlighting breaks on large files
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+au FileType javascript, typescript, typescriptreact set shiftwidth=2
+au FileType javascript, typescript, typescriptreact set tabstop=2
+au FileType javascript, typescript, typescriptreact set softtabstop=2
 
 
 """"""""""""""""""""""""""""""

@@ -47,6 +47,7 @@ Plug 'neoclide/coc-prettier'
 
 " Python
 Plug 'nvie/vim-flake8'
+Plug 'davidhalter/jedi-vim'
 Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
